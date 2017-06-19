@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<title>幻想EXE</title>
+<style>
+  * {
+  	margin: 0;
+  	padding: 0;
+  }
+
+  body {
+  	background-color: #8ee5ee;
+  	color: #fff;
+  }
+
+  main {
+  	max-width: 20em;
+  	height: 10em;
+  	margin: 0 auto;
+    margin-top: 20%;
+  }
+
+  .name {
+  	max-width: 20em;
+  	height: 6em;
+  	background-color: #fff;
+    position: relative;
+    box-shadow: 5px 5px 2px #0A3A7D;
+  }
+
+  .input {
+  	width: 15em;
+  	height: 2em;
+    line-height: 2em;
+    position: absolute;
+    left: 2.5em;
+    top: 2em;
+    background: url(logo/timg.png) right 50% no-repeat #ffc125;
+  }
+
+  button {
+    float: right;
+    width: 2.5em;
+    opacity: 0;
+    height: 2.4em;
+    cursor: pointer;
+  }
+
+  #random_name {
+    width: 10em;
+    text-align: left;
+    height: 1.5em;
+    position: absolute;
+    top: 0em;
+    left: 0.3em;
+    background: #ffc125;
+    box-shadow: none;
+    color: #000;
+  }
+
+  input {
+    background: #ffc125;
+    color: #fff;
+    border: #ffc125;
+    cursor: pointer;
+    margin-top: .5em;
+    box-shadow: 2px 2px 1px #0A3A7D;
+  }
+</style>
+<link rel="shortcur icon" type="image/x-icon" href="logo/7favicon.ico" media="screen" />
+</head>
+<body>
+  <main>
+    <label for="name">角色名字</label>
+      <div class="name">
+        <div class="input">
+          <input type="text" id="random_name" name="名字" placeholder="请输入你的名字" value="" />
+          <button id="opacity_button"></button>
+        </div>
+      </div>
+    <input type="button" name="submit" value="确认" onclick="location.href='play.html'" />
+  </main>
+<script src="name.js"></script>
+</body>
+</html>
